@@ -94,8 +94,8 @@ backgroundEnv.needsUpdate = true;
 
 function animate() {
   renderer.render(scene, camera);
-  //globeGroup.rotation.y += 0.002;
-  //globeGroup.rotation.x += 0.0003;
+  globeGroup.rotation.y += 0.002;
+  globeGroup.rotation.x += 0.0003;
 
   requestAnimationFrame(animate);
   orbitCtrl.update();
