@@ -4,7 +4,7 @@ import getStarfield from "./src/getStarfield.js";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 1000);
-camera.position.set(0, 0, 4.5);
+camera.position.set(0, 0, 5.5);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(innerWidth, innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -86,7 +86,7 @@ globeGroup.add(points);
 const hemiLight = new THREE.HemisphereLight(0xffffff, 0x080820, 3);
 scene.add(hemiLight);
 
-const stars = getStarfield({ numStars:4500, sprite: starSprite });
+const stars = getStarfield({ numStars:2500, sprite: starSprite });
 scene.add(stars);
 
 scene.environment = backgroundEnv;
