@@ -68,7 +68,7 @@ const fragmentShader = `
   }
 `;
 const uniforms = {
-  size: { type: "f", value: 3.6 },
+  size: { type: "f", value: 4 },
   colorTexture: { type: "t", value: colorMap },
   elevTexture: { type: "t", value: elevMap },
   alphaTexture: { type: "t", value: alphaMap }
